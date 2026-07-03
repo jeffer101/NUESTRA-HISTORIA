@@ -112,3 +112,18 @@ animation: brillar 4s ease-in-out infinite;
     }
 
 }
+.carta{
+    max-width:700px;
+    margin:auto;
+    text-align:center;
+    padding:40px;
+}
+
+.carta h1{
+    margin-bottom:25px;
+}
+
+.carta p{
+    font-size:22px;
+    line-height:1.8;
+}
