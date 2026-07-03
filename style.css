@@ -89,3 +89,36 @@ button:hover{
     }
 
 }
+.carta{
+
+display:none;
+
+position:absolute;
+
+text-align:center;
+
+max-width:700px;
+
+padding:40px;
+
+animation: aparecer 1.5s;
+
+}
+
+.carta h2{
+
+font-size:45px;
+
+margin-bottom:25px;
+
+}
+
+.carta p{
+
+font-size:22px;
+
+line-height:1.8;
+
+margin-bottom:35px;
+
+}
