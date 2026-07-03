@@ -1,7 +1,13 @@
-const boton = document.getElementById("entrar");
+const boton=document.getElementById("entrar");
 
-boton.addEventListener("click",()=>{
+const portada=document.querySelector(".portada");
 
-    alert("Bienvenida a nuestra historia ❤️");
+const carta=document.querySelector(".carta");
 
-});
+boton.onclick=function(){
+
+portada.style.display="none";
+
+carta.style.display="block";
+
+}
