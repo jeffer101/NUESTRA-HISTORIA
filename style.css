@@ -84,3 +84,14 @@ animation: brillar 4s ease-in-out infinite;
     }
 
 }
+.luna{
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    width: 120px;
+    height: 120px;
+    background: #fff8dc;
+    border-radius: 50%;
+    box-shadow: 0 0 40px #fff8dc,
+                0 0 80px #fff8dc;
+}
