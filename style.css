@@ -22,8 +22,20 @@ body{
 }
 
 h1{
+
     font-size:60px;
+
     margin-bottom:20px;
+
+    color:white;
+
+    text-shadow:
+    0 0 10px white,
+    0 0 20px #ffd369,
+    0 0 40px #ffd369;
+
+    animation: brilloTitulo 3s infinite;
+
 }
 
 h2{
@@ -148,5 +160,35 @@ animation: brillar 4s ease-in-out infinite;
         transform:translateY(0);
 
     }
+
+}
+@keyframes brilloTitulo{
+
+0%{
+
+text-shadow:
+0 0 10px white,
+0 0 20px #ffd369,
+0 0 40px #ffd369;
+
+}
+
+50%{
+
+text-shadow:
+0 0 20px white,
+0 0 40px #ffd369,
+0 0 80px #ffd369;
+
+}
+
+100%{
+
+text-shadow:
+0 0 10px white,
+0 0 20px #ffd369,
+0 0 40px #ffd369;
+
+}
 
 }
