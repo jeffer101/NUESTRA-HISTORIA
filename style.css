@@ -94,4 +94,5 @@ animation: brillar 4s ease-in-out infinite;
     border-radius: 50%;
     box-shadow: 0 0 40px #fff8dc,
                 0 0 80px #fff8dc;
+    z-index: 10;
 }
