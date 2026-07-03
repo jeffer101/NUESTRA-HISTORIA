@@ -49,9 +49,9 @@ button{
     transition:.3s;
     animation: latido 2s infinite;
 }
-
 button:hover{
-    transform:scale(1.1);
+    transform: scale(1.1);
+    background:#ff2d73;
 }
 .estrellas{
     position: fixed;
