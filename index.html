@@ -1,210 +1,35 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Nuestra Historia ❤️</title>
+    <title>Nuestra Historia ❤️</title>
 
-<style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,Helvetica,sans-serif;
-}
-
-body{
-background:linear-gradient(135deg,#ff4b91,#8b0000);
-color:white;
-overflow-x:hidden;
-text-align:center;
-}
-
-header{
-height:100vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-padding:20px;
-}
-
-h1{
-font-size:55px;
-margin-bottom:20px;
-}
-
-h2{
-font-size:28px;
-margin-bottom:15px;
-}
-
-p{
-font-size:20px;
-max-width:700px;
-line-height:1.8;
-}
-
-button{
-margin-top:30px;
-padding:18px 40px;
-font-size:20px;
-border:none;
-border-radius:50px;
-cursor:pointer;
-background:white;
-color:#ff0066;
-transition:.4s;
-}
-
-button:hover{
-transform:scale(1.1);
-}
-
-section{
-padding:80px 20px;
-}
-
-.galeria{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-max-width:1100px;
-margin:auto;
-}
-
-.galeria img{
-width:100%;
-border-radius:20px;
-box-shadow:0 0 20px rgba(255,255,255,.3);
-}
-
-footer{
-padding:50px;
-font-size:18px;
-opacity:.8;
-}
-
-.corazon{
-position:fixed;
-top:-10px;
-font-size:25px;
-animation:caer linear forwards;
-}
-
-@keyframes caer{
-
-to{
-transform:translateY(110vh);
-}
-
-}
-
-</style>
-
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
+    <div class="inicio">
 
-<h1>❤️ Nuestra Historia ❤️</h1>
+        <h1>Nuestra Historia ❤️</h1>
 
-<h2>Para la niña más hermosa del mundo</h2>
+        <h2>Para la niña más hermosa del mundo</h2>
 
-<p>
+        <p>
+            Cada detalle de esta página fue creado pensando en ti.
+        </p>
 
-Esta página fue creada con todo mi corazón.
+        <button id="entrar">
+            Entrar ❤️
+        </button>
 
-Cada palabra, cada detalle y cada segundo que dediqué a hacerla tiene un solo propósito...
+    </div>
 
-hacerte sonreír.
-
-</p>
-
-<button onclick="mostrarMensaje()">
-
-Haz clic aquí ❤️
-
-</button>
-
-</header>
-
-<section>
-
-<h1>💌 Un pequeño mensaje</h1>
-
-<p id="mensaje">
-
-Desde que llegaste a mi vida todo cambió.
-
-Gracias por existir.
-
-Gracias por hacerme tan feliz.
-
-Espero que esta sea solo una pequeña muestra de todo el amor tan inmenso que siento por ti.
-
-</p>
-
-</section>
-
-<section>
-
-<h1>📸 Nuestros recuerdos</h1>
-
-<div class="galeria">
-
-<img src="https://picsum.photos/500?1">
-
-<img src="https://picsum.photos/500?2">
-
-<img src="https://picsum.photos/500?3">
-
-</div>
-
-</section>
-
-<footer>
-
-Hecho con muchísimo amor ❤️
-
-</footer>
-
-<script>
-
-function mostrarMensaje(){
-
-alert("Te amo muchísimo ❤️");
-
-}
-
-function crearCorazon(){
-
-const corazon=document.createElement("div");
-
-corazon.innerHTML="❤️";
-
-corazon.classList.add("corazon");
-
-corazon.style.left=Math.random()*100+"vw";
-
-corazon.style.animationDuration=(Math.random()*4+3)+"s";
-
-document.body.appendChild(corazon);
-
-setTimeout(()=>{
-
-corazon.remove();
-
-},7000);
-
-}
-
-setInterval(crearCorazon,250);
-
-</script>
+    <script src="script.js"></script>
 
 </body>
+
 </html>
