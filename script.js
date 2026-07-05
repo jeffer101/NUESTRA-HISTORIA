@@ -42,10 +42,10 @@ function actualizarTiempo() {
 
     const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
 
-    tiempo.innerHTML =
-        "❤️ Han pasado <br><br><strong>" +
-        dias +
-        " días</strong><br><br>y sigo eligiéndote cada día.";
+   tiempo.innerHTML =
+    "✨💛 Han pasado <br><br><strong>" +
+    dias +
+    " días</strong><br><br>y sigo eligiéndote cada día.";
 }
 btnFinal.onclick = () => {
 
