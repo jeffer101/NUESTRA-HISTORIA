@@ -122,3 +122,35 @@ line-height:1.8;
 margin-bottom:35px;
 
 }
+.portada-musica{
+    width:250px;
+    height:250px;
+    object-fit:cover;
+    border-radius:20px;
+    margin:20px auto;
+    display:block;
+    box-shadow:0 0 25px rgba(255,255,255,.4);
+    animation:girar 12s linear infinite;
+}
+
+@keyframes girar{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg);
+    }
+}
+
+.artista{
+    font-size:22px;
+    color:#d8d8d8;
+    margin-bottom:10px;
+}
+
+.mensaje-musica{
+    max-width:600px;
+    margin:20px auto;
+    line-height:1.8;
+    font-size:18px;
+}
