@@ -58,9 +58,25 @@ button:hover{
     height:100%;
     background-image:
     radial-gradient(white 1px, transparent 1px),
-    radial-gradient(#ffd700 1px, transparent 1px);
+    radial-gradient(#FFD700 1px, transparent 1px);
     background-size:80px 80px,150px 150px;
-    opacity:.6;
+    opacity:.7;
+    animation:parpadear 3s ease-in-out infinite;
+}
+@keyframes parpadear{
+
+    0%{
+        opacity:.3;
+    }
+
+    50%{
+        opacity:1;
+    }
+
+    100%{
+        opacity:.3;
+    }
+
 }
 
 .luna{
@@ -73,21 +89,33 @@ button:hover{
     background:#fff7c2;
     box-shadow:
         0 0 40px #fff7c2,
-        0 0 80px #fff7c2;
+        0 0 80px #fff7c2,
+        0 0 120px #FFD700;
+
+    animation:lunaBrilla 4s ease-in-out infinite;
+}
+      
 }
 
-@keyframes aparecer{
+@keyframes lunaBrilla{
 
-    from{
-        opacity:0;
-        transform:translateY(30px);
+    0%{
+        transform:scale(1);
     }
 
-    to{
-        opacity:1;
-        transform:translateY(0);
+    50%{
+        transform:scale(1.05);
+        box-shadow:
+            0 0 60px #fff7c2,
+            0 0 100px #FFD700,
+            0 0 150px #FFD700;
     }
 
+    100%{
+        transform:scale(1);
+    }
+
+}
 }
 .carta{
 
