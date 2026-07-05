@@ -15,10 +15,18 @@ body{
     align-items:center;
 }
 
-.portada{
-    text-align:center;
-    z-index:2;
-    animation: aparecer 2s ease;
+.portada-musica{
+    width:280px;
+    height:280px;
+    object-fit:cover;
+    display:block;
+    margin:25px auto;
+    border-radius:20px;
+    border:4px solid #FFD700;
+    box-shadow:
+        0 0 20px #FFD700,
+        0 0 40px rgba(255,215,0,.5);
+    animation:girar 18s linear infinite;
 }
 
 .portada h1{
