@@ -2,11 +2,11 @@ const portada = document.querySelector(".portada");
 const carta = document.querySelector(".carta");
 const musica = document.querySelector(".musica");
 const contador = document.querySelector(".contador");
-
+const final = document.querySelector(".final");
 const btnEntrar = document.getElementById("entrar");
 const btnContinuar = document.getElementById("continuar");
 const btnContador = document.getElementById("contadorBtn");
-
+const btnFinal = document.getElementById("finalBtn");
 const tiempo = document.getElementById("tiempo");
 
 // Ocultar secciones
@@ -46,4 +46,11 @@ function actualizarTiempo() {
         "❤️ Han pasado <br><br><strong>" +
         dias +
         " días</strong><br><br>y sigo eligiéndote cada día.";
+}
+btnFinal.onclick = () => {
+
+    contador.style.display = "none";
+
+    final.style.display = "block";
+
 }
